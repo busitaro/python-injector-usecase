@@ -12,11 +12,15 @@ class RequestSample:
     def name(self):
         self.__sample.name()
 
+    def show_param(self):
+        self.__sample.show_param()
+
 
 def main():
     injector = Injector([SampleDIModule()])
     sample = injector.get(RequestSample)
     sample.name()
+    sample.show_param()
 
 
 if __name__ == '__main__':
