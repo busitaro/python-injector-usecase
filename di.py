@@ -3,6 +3,9 @@ from interface import ISample, SampleLogic1, SampleLogic2
 
 
 class SampleDIModule(Module):
+    def __init__(self, param: str):
+        self.__param = param
+
     def configure(self, binder):
         # change here to SampleLogic2 if you needed
-        binder.bind(ISample, to=SampleLogic1('foo'))
+        binder.bind(ISample, to=SampleLogic1(self.__param))

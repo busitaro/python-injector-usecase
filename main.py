@@ -17,7 +17,7 @@ class RequestSample:
 
 
 def main():
-    injector = Injector([SampleDIModule()])
+    injector = Injector([SampleDIModule('bar')])
     sample = injector.get(RequestSample)
     sample.name()
     sample.show_param()
