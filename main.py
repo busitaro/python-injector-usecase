@@ -1,4 +1,5 @@
-from injector import Injector, inject
+from injector import Injector
+from injector import inject
 
 from interface import ISample
 from di import SampleDIModule
@@ -8,6 +9,9 @@ class RequestSample:
     @inject
     def __init__(self, sample: ISample):
         self.__sample = sample
+
+    def get_str(self):
+        return self.__sample.get_str()
 
     def name(self):
         self.__sample.name()

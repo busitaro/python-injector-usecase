@@ -7,6 +7,7 @@ python injectorの簡単な使い方です。
 |main.py|DIの実行|
 |interface.py|インターフェース、実装|
 |di.py|インターフェースと実装の紐づけ|
+|test.py|unittestからDIを実行|
 <br>
 
 注入するクラスを変更する際には、di.pyの以下の部分を変更して下さい。
