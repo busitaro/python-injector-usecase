@@ -43,3 +43,15 @@ class SampleLogic2(ISample):
         print(
             'SampleLogic2 has a param with a value of {}'.format(self.__param)
         )
+
+
+class ISingletonSample(metaclass=ABCMeta):
+    def get_id(self):
+        return id(self)
+
+    def show_id(self):
+        print('Id of this instance is {}'.format(id(self)))
+
+
+class SingletonSample(ISingletonSample):
+    pass
