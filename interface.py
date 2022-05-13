@@ -27,7 +27,9 @@ class SampleLogic1(ISample):
         print('This is SampleLogic1')
 
     def show_param(self):
-        print('SampleLogic1 has a param with a value of {}'.format(self.__param))
+        print(
+            'SampleLogic1 has a param with a value of {}'.format(self.__param)
+        )
 
 
 class SampleLogic2(ISample):
@@ -38,4 +40,6 @@ class SampleLogic2(ISample):
         print('This is SampleLogic2')
 
     def show_param(self):
-        print('SampleLogic2 has a param with a value of {}'.format(self.__param))
+        print(
+            'SampleLogic2 has a param with a value of {}'.format(self.__param)
+        )
